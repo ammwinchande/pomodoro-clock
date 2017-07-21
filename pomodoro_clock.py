@@ -58,8 +58,8 @@ def display():
     :return:
     """
     print("\n*****************************************")
-    print("*\t\t\t Pomodoro Clock \t\t\t*")
-    print("*\t\t author: m.a. mwinchande \t\t*")
+    print("*         Pomodoro Clock                *")
+    print("*       author: m.a. mwinchande         *")
     print("*****************************************")
     print("\n")
 
