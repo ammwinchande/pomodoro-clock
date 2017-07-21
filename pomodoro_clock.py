@@ -11,8 +11,8 @@ def start_pomodoro(url, pomodoro_number):
     """
     pomodoro_count = 0
     while pomodoro_count < pomodoro_number:
-        time.sleep(10)
-        webbrowser.open(url)
+        time.sleep(25*60)
+        webbrowser.open(url, new=1, autoraise=1)
         pomodoro_count += 1
 
 
@@ -29,6 +29,7 @@ def handle_program(execution, url, pomodoro_number):
     elif execution == 'y' or execution == 'Y':
         print("Program will quit after finishing the number of pomodoros\n"
               "or you cancel the program by pressing ctrl+c")
+        print("Pomodoro Clock was started at: " + time.ctime())
         start_pomodoro(url, pomodoro_number)
     else:
         print("Sorry, I couldn't understand one of your options"
@@ -42,7 +43,7 @@ def get_inputs():
     :return:
     """
     fav_music_url = input("Enter your favourite music URL: ")
-    pomodoro_number = int(input("Enter number of pomodoros: "))
+    pomodoro_number = int(input("Enter number of pomodoro cycles: "))
     start_clock = input("Enter 'Y' or 'y' to start the clock \n"
                         "OR Enter 'Q' or 'q' to quit the program: ")
     if fav_music_url == "":
