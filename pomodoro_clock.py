@@ -62,6 +62,8 @@ def display():
     print("*       author: m.a. mwinchande         *")
     print("*****************************************")
     print("\n")
+    print("You can cancel the program anytime by pressing 'Ctrl + C' \n")
+
 
 
 # execute the program
